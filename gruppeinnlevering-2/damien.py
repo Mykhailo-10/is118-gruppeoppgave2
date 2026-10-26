@@ -1,1 +1,0 @@
-yoyo hva skjer-
