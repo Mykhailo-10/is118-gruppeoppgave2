@@ -25,17 +25,62 @@ while svar1 != "1A" and svar1 != "1B":
 
 if svar1 == "1A":
     print("Erling velger å ha enesamtaler og et strukturert fellesmøte. Dette hjelper med å få samtalen tilbake til saklig tema.")
+    print("Men det krever ekstra tid i en allerede presset tidsfrist..")
 else:
     print("Erling tvinger frem avstemning. En rask teknisk avklaring er på plass, men taperen føler seg lit overkjørt..")
 
 input("Trykk på Enter for å fortsette...")
 
 # === Beslutnigspunkt 2:Hamdi og Hallgeir ===
-print("\nNeste utfordring Erling møter er uenighet mellom Hamdi og Hallgeir.")
+print("\nBeslutning 2: Neste utfordring Erling møter er uenighet mellom Hamdi og Hallgeir.")
 print ("Uenigheten dreiser seg om folkemøter skal styres strengt eller være mer åpene")
-print("\nBeslutning 2: Hvordan håndterer Erling uenogheten mellom Hamdi og Hallgeir?\n")
+print("\nHvordan håndterer Erling uenigheten mellom Hamdi og Hallgeir?\n")
 print("2A: Erling velger å arrangere en Workshop og en testpilot")
 print("\n2B: Erling velger å avvente situasjonen og håper at de finner en løsning selv.\n")
+
+svar2= ""
+
+# === lager en while loop som tvinger brukeren til å skrive inn 2A eller 2B for å gå videre.
+
+while svar2 != "2A" and svar2 != "2B":
+    svar2 = input("Skriv inn 2A eller 2B for å velge: ")
+
+# === lager en ny IF Else som git brukeren en repsons på deres nye valg. 
+
+if svar2 == "2A":
+    print("Erling sikrer at brukerne blir hørt og vil bygge tillit til systemet, men det krever mer arbeid og tid...")
+else:
+    print("Erling unngår ekstra tidsbruk på ekstra møter i en periode med stram tidsfrist, men kan øke risiko for flere uenigheter...")
+
+input("Trykk på Enter for å fortsette...")
+
+# === Beslutning 3: Det gjenstår bare en uke til første prototypen skal presenteres for ledelsen.
+
+print("\nBeslutning 3: Det gjenstår bare en uke til første prototypen skal presenteres for ledelsen.")
+print("Erling må velge overordnet ledelsesstrategi for den siste innspurten\n")
+print("3A: Erling kan velge relasjonsfokus og feiring av delmål, men dette krever tid og tar bort fra tid de kan bruke på å fremstille prototypen.")
+print("3B: Erling kan velge streng oppgavestyring og fristfokus, men dette kan føre til stress og utbrenthet.")
+
+svar3 = ""
+ # === lager enda en while loop for å tvinge riktig input fra brukeren.
+
+while svar3 != "3A" and svar3 != "3B":
+    svar3 = input("Skriv inn 3A eller 3B for å velge: ")
+
+# === legger til IF og ELSE for å gi brukeren repons basert på valget de tok.
+
+if svar3 == "3A":
+    print("Erling velger relasjonsfokus og feiring av delmål. Dette skaper et godt arbeidsmiljø, men kan føre til at prototypen ikke blir ferdig i tide...")
+else:
+    print("Erling velger streng oppgavestyring og fristfokus. Dette sikrer at prototypen blir ferdig i tide, men kan føre til stress og utbrenthet blant teammedlemmene...")
+
+# === skal ha en input for å la brukeren komme seg videre til sluttresultatet av valgene de tok.
+
+input("Trykk på Enter for å se sluttresulatet av valgene dine...")
+
+
+
+
 
 
 
