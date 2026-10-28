@@ -58,7 +58,7 @@ input("Trykk på Enter for å fortsette...")
 
 print("\nBeslutning 3: Det gjenstår bare en uke til første prototypen skal presenteres for ledelsen.")
 print("Erling må velge overordnet ledelsesstrategi for den siste innspurten\n")
-print("3A: Erling kan velge relasjonsfokus og feiring av delmål, men dette krever tid og tar bort fra tid de kan bruke på å fremstille prototypen.")
+print("3A: Erling kan velge relasjonsfokus og feiring av delmål, men dette krever tid og tar bort fra tid de kan bruke på å fremstille prototypen.\n")
 print("3B: Erling kan velge streng oppgavestyring og fristfokus, men dette kan føre til stress og utbrenthet.")
 
 svar3 = ""
@@ -78,9 +78,25 @@ else:
 
 input("Trykk på Enter for å se sluttresulatet av valgene dine...")
 
+score = 0 
 
+if svar1 == "1A":
+    score += 1
+if svar2 == "2A":
+    score += 1
+if svar3 == "3A":
+    score += 1  
 
+print("\nSpillets slutt")
 
+if score == 3:
+    print("Gratulerer! Du har gjort de beste valgene og lykkes med å lede prosjektet til suksess.")
+    print("Teamet finner felles normer og samarbeidet blir bra!.")
+elif score == 0:
+    print("Du har gjort noen dårlige valg, men det er ikke for sent å lære av dem.")
+    print("Tilliten i teamer er svekket, og samarbeidet har låst seg helt")
+else:
+    print("Du har gjort noen gode og noen dårlige valg. Prøv igjen for å oppnå bedre resultat.")
+    print("Teamet har blitt påvirket av de dårlige valgene, og samarbeidet er merkelig og krevende.")
 
-
-
+print("\nTakk for at du spilte!")
