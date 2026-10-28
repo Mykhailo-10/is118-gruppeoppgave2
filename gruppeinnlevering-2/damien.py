@@ -80,6 +80,8 @@ input("Trykk på Enter for å se sluttresulatet av valgene dine...")
 
 score = 0 
 
+# === her er det If statments som sjekker hvilke valg brukeren tok og gir poeng for de beste valgene.
+
 if svar1 == "1A":
     score += 1
 if svar2 == "2A":
@@ -88,6 +90,8 @@ if svar3 == "3A":
     score += 1  
 
 print("\nSpillets slutt")
+
+# === her er det if, elif og else statments som er brukt for å gi brukeren en feed back på valgene deres. De sjekker om du har enten 3 "riktigte" eller om du har ingen så gir feedback basert på det. 
 
 if score == 3:
     print("Gratulerer! Du har gjort de beste valgene og lykkes med å lede prosjektet til suksess.")
