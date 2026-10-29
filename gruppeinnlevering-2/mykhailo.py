@@ -3,24 +3,34 @@ antall_a = 0
 # Teller for hvor mange ganger spilleren skriver noe annet.
 antall_ugyldig = 0
 # Første del: forteller starten på historien.
+print()
+print("-----")
+print("START")
+print()
 print("""Prosjektet er kommunens nye digitale portal for innbyggerne.
 Det har gått seks uker. Du er Erling, prosjektleder, og teamet er i storming-fasen.
 Prototypen skal være klar om tre uker.
 
 Silje (UX-designer) vil ha god brukervennlighet. Elias (IT-rådgiver) tenker på IT-sikkerhet og budsjett.
-Uenigheten deres har gått fra en sakskonflikt til en personkonflikt.
-
-Hva gjør du?
-A: Du snakker med Silje og Elias hver for seg, og holder så et strukturert fellesmøte.
-B: Du skjærer gjennom med en avstemning i plenum.""")
+Uenigheten deres har gått fra en sakskonflikt til en personkonflikt.""")
 
 # Listene inneholder svarene vi godtar for A og B.
 a_valg = ["a", "aa", "aaa"]
 b_valg = ["b", "bb", "bbb"]
 
 # Valg 1: Erling håndterer konflikten mellom Silje og Elias.
+print()
+print("-----")
+print("BESLUTNING 1 AV 3")
+print()
+print("""Hva gjør du?
+A: Du snakker med Silje og Elias hver for seg, og holder så et strukturert fellesmøte.
+B: Du skjærer gjennom med en avstemning i plenum.""")
+
+print()
 valg = input("Hva velger du, A eller B? Skriv A eller B: ").lower() # .lower() gjør bokstavene små, så "A" og "a" regnes som det samme.
 print()
+print("KONSEKVENS:")
 if valg in a_valg:
     print("Samtalene kommer tilbake til saken. Konflikten roer seg, og tilliten i teamet er bevart. Men to uker har gått.")
     antall_a += 1    # Hvis spilleren velger A, legger vi til 1 på telleren. Tallet bestemmer hvilken slutt spilleren får.
@@ -33,16 +43,19 @@ else:      # else tar imot alt annet enn A og B.
 # Valg 2: Erling håndterer uenigheten mellom Hamdi og Hallgeir.
 print()
 print("-----")
+print("BESLUTNING 2 AV 3")
 print()
-print("""Samtidig vokser en ny uenighet frem. Hamdi vil ha en kontrollert løsning for folkemøter. 
+print("""Samtidig vokser en ny uenighet frem. Hamdi vil ha en kontrollert løsning for folkemøter.
 Hallgeir vil ha et mer åpent system med plass til spontane innspill.
 
 Hva gjør du?
 A: Du arrangerer en workshop og en testpilot med brukerne.
 B: Du venter og ser an situasjonen.""")
 
+print()
 valg = input("Hva velger du, A eller B? Skriv A eller B: ").lower()
 print()
+print("KONSEKVENS:")
 if valg in a_valg:
     print("Du arrangerer workshop og testpilot. Brukerne blir hørt, men det krever merarbeid.")
     antall_a += 1    # Hvis spilleren velger A, legger vi til 1 på telleren. Tallet bestemmer hvilken slutt spilleren får.
@@ -63,16 +76,19 @@ else:      # else tar imot 0.
 # Valg 3: Erling velger hvordan han leder teamet i innspurten.
 print()
 print("-----")
+print("BESLUTNING 3 AV 3")
 print()
-print("""Det gjenstår bare en uke til prototypen skal presenteres for ledelsen. 
+print("""Det gjenstår bare en uke til prototypen skal presenteres for ledelsen.
 Du må velge hvordan du leder teamet i innspurten.
 
 Hva gjør du?
 A: Du legger vekt på relasjoner og feirer delmål.
 B: Du styrer oppgavene strengt og setter fokus på fristen.""")
 
+print()
 valg = input("Hva velger du, A eller B? Skriv A eller B: ").lower()
 print()
+print("KONSEKVENS:")
 if valg in a_valg:
     print("Teamet får støtte og beholder motivasjonen, men mindre tid går til produksjon.")
     antall_a += 1    # Hvis spilleren velger A, legger vi til 1 på telleren. Tallet bestemmer hvilken slutt spilleren får.
@@ -85,6 +101,7 @@ else:      # else tar imot alt annet enn A og B.
 # Slutten: antall A fra de tre valgene bestemmer hvilken avslutning spilleren får.
 print()
 print("-----")
+print("SLUTT")
 print()
 if antall_ugyldig >= 2:
     print("""Du har ikke tatt tydelige valg underveis. Teamet mister retningen, og ledelsen mister tilliten til deg.
